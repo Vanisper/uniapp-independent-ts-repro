@@ -1,0 +1,13 @@
+diff --git a/node_modules/@dcloudio/vite-plugin-uni/dist/config/index.js b/node_modules/@dcloudio/vite-plugin-uni/dist/config/index.js
+index fa8a7d8..71f774d 100644
+--- a/node_modules/@dcloudio/vite-plugin-uni/dist/config/index.js
++++ b/node_modules/@dcloudio/vite-plugin-uni/dist/config/index.js
+@@ -39,7 +39,7 @@ function createConfig(options, _uniPlugins) {
+                 include: process.env.UNI_APP_X_DOM2 === 'true' &&
+                     process.env.UNI_APP_X_VAPOR_SCRIPT_LANG === 'true'
+                     ? /\.(tsx?|jsx)$/
+-                    : /\.(tsx?|jsx|uts)$/,
++                    : /(?:\.(?:tsx?|jsx|uts)$|[?&]lang\.(?:tsx?|jsx|uts)(?:&|$))/,
+                 exclude: /\.js$/,
+                 loader: 'ts',
+             },
