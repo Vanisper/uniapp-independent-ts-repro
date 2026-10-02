@@ -7,6 +7,15 @@
 			}
 		}
 	],
+	"subPackages": [
+		{
+			"root": "packages/independent",
+			"independent": true,
+			"pages": [
+				{ "path": "index" }
+			]
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
